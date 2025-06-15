@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Scale Metronome</string>
+    <string name="title_Tutorial">Tutorial</string>
+    <string name="title_Lesson">Lesson</string>
+    <string name="title_Metronome">Metronome</string>
+    <string name="title_PracticeLog">Practice Log</string>
+    <string name="title_Settings">Settings</string>
+    <string name="BPM_minus">-</string>
+    <string name="BPM_plus">+</string>
+    <string name="Play_Start">Play</string>
+    <string name="Play_Stop">Pause</string>
+    <string name="free_mode">자율모드</string>
+    <string name="chromatic_mode">크로매틱 모드</string>
+    <string name="scale_diagram">scale_diagram</string>
+    <string name="settings">settings</string>
+    <string name="goBack">go back</string>
+    <string name="scale_back">scale_back</string>
+    <string name="scale_next">scale_next</string>
+</resources>

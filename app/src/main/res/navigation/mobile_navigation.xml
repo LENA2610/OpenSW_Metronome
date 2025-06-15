@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_Tutorial">
+
+    <fragment
+        android:id="@+id/navigation_Tutorial"
+        android:name="com.example.opensw_metronome.ui.Tutorial.TutorialFragment"
+        android:label="@string/title_Tutorial"
+        tools:layout="@layout/fragment_tutorial" />
+
+    <fragment
+        android:id="@+id/navigation_Lesson"
+        android:name="com.example.opensw_metronome.ui.Lesson.LessonFragment"
+        android:label="@string/title_Lesson"
+        tools:layout="@layout/fragment_lesson" />
+    <fragment
+        android:id="@+id/lessonDetailFragment"
+        android:name="com.example.opensw_metronome.ui.Lesson.LessonDetailFragment"
+        android:label="Lesson Detail" >
+        <argument
+            android:name="detailText"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_Metronome"
+        android:name="com.example.opensw_metronome.ui.Metronome.MetronomeFragment"
+        android:label="@string/title_Metronome"
+        tools:layout="@layout/fragment_metronome" />
+
+    <fragment
+        android:id="@+id/navigation_PracticeLog"
+        android:name="com.example.opensw_metronome.ui.Practice_Log.PracticeLogFragment"
+        android:label="@string/title_PracticeLog"
+        tools:layout="@layout/fragment_practice_log" />
+
+    <fragment
+        android:id="@+id/navigation_Settings"
+        android:name="com.example.opensw_metronome.ui.Settings.SettingFragment"
+        android:label="@string/title_Settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

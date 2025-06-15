@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+<!--  practice log 페이지 리스트에 표기할 항목들  -->
+
+    <!-- 1. 오늘날짜 -->
+    <TextView
+        android:id="@+id/Log1_todayDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2025-05-20 14:30" />
+
+    <!-- 2. BPM -->
+    <TextView
+        android:id="@+id/Log2_BPM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BPM: 200bpm" />
+
+    <!-- 3. 목표 연습시간 -->
+    <TextView
+        android:id="@+id/Log3_timerGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goal: 60sec" />
+
+    <!-- 4. 실제 연습시간 -->
+    <TextView
+        android:id="@+id/Log4_timerRealPractice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Real_practice: 30sec" />
+
+    <!-- 5. 연습한 스케일 포지션 -->
+    <TextView
+        android:id="@+id/Log5_scalePosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scale: Andantino" />
+
+    <!-- 6. 사용자 평가 -->
+    <TextView
+        android:id="@+id/Log6_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rating: 4/5" />
+</LinearLayout>

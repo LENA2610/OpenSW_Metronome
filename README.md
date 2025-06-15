@@ -4,10 +4,11 @@
 A. 실행방법
 
 1. 안드로이드 스튜디오 설치 및 실행
-2. 상단 메뉴바에서 File - Open - 프로젝트 폴더 선택 후 열기
-3. 우측 상단의 실행버튼 (재생 모양 아이콘, Run 'app') 클릭
-4. 안드로이드 시뮬레이터를 통해 앱 실행
-5. Running Devices는 Medium Phone API 35로 테스트 진행
+2. 설치링크: https://developer.android.com/studio?hl=ko
+3. 상단 메뉴바에서 File - Open - 프로젝트 폴더 선택 후 열기
+4. 우측 상단의 실행버튼 (재생 모양 아이콘, Run 'app') 클릭
+5. 안드로이드 시뮬레이터를 통해 앱 실행
+6. Running Devices는 Medium Phone API 35로 테스트 진행
 
 
 B. 개발 및 테스트 환경

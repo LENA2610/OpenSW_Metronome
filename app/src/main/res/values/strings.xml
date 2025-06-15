@@ -16,4 +16,6 @@
     <string name="goBack">go back</string>
     <string name="scale_back">scale_back</string>
     <string name="scale_next">scale_next</string>
+    <string name="add_log">add log</string>
+    <string name="delete_log">delete log</string>
 </resources>

@@ -253,6 +253,12 @@ class MetronomeFragment : Fragment() {
         binding.btnNextScale.visibility = View.GONE
         (requireActivity() as MainActivity).NavControl_Class.hide()
         (requireActivity() as MainActivity).SetControl_Class.hide()
+
+        // 크로매틱 모드에서만 로그 안내 표시
+        if (binding.WhatMode.checkedRadioButtonId == R.id.Mode_chromatic) {
+            binding.tvLogHint.visibility = View.VISIBLE
+        }
+
         BeatIndex = 0
         scheduleNextBeat()
 
@@ -287,6 +293,8 @@ class MetronomeFragment : Fragment() {
     @SuppressLint("SetTextI18n")
     private fun stopMetronome() {
         timerHandler.removeCallbacks(timerRunnable) // 타이머 일시정지
+        // 일시정지 시 안내 숨김
+        binding.tvLogHint.visibility = View.GONE
         Metronome_RemainTime = Metronome_GoalTime   // 타이머 값을 목표값으로 초기화
         val minutes = (Metronome_RemainTime / 1000) / 60
         val seconds = (Metronome_RemainTime / 1000) % 60

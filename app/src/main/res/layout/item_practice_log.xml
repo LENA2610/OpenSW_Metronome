@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="12dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:gravity="end">
 
 
-
-
-<!--  practice log 페이지 리스트에 표기할 항목들  -->
+    <!--  practice log 페이지 리스트에 표기할 항목들  -->
 
     <!-- 1. 오늘날짜 -->
     <TextView
         android:id="@+id/Log1_todayDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2025-05-20 14:30" />
+        android:text="2025-05-20 14:30"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <!-- 2. BPM -->
     <TextView
@@ -43,7 +45,7 @@
         android:id="@+id/Log5_scalePosition"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Scale: Andantino" />
+        android:text="Scale: Ionian" />
 
     <!-- 6. 사용자 평가 -->
     <TextView
@@ -51,4 +53,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Rating: 4/5" />
+
+    <!-- 삭제 버튼 -->
+    <ImageButton
+        android:id="@+id/ibDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_delete"
+        android:contentDescription="@string/delete_log"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:layout_gravity="end"
+        app:tint="@android:color/darker_gray" />
 </LinearLayout>
